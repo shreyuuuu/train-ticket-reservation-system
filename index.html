@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Train Reservation System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <div class="container-1">
+    <h2>Train Reservation Form</h2>
+  </div>
+    <hr>
+    <form id="reservationForm">
+      <div class="form-row">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+      </div>
+      <div class="form-row">
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+      </div>
+      <div class="form-row">
+        <label for="train">Train:</label>
+        <select id="train">
+          <option value="rajdhani">Rajdhani Express</option>
+          <option value="shatabdi">Shatabdi Express</option>
+          <option value="duronto">Duronto Express</option>
+          <option value="garib_rath">Garib Rath Express</option>
+          <option value="humsafar">Humsafar Express</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="from">From:</label>
+        <select id="from">
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="chennai">Chennai</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="bangalore">Bangalore</option>
+        </select>
+      </div>
+
+      <!-- To -->
+      <div class="form-row">
+        <label for="to">To:</label>
+        <select id="to">
+          <option value="delhi">Delhi</option>
+          <option value="mumbai">Mumbai</option>
+          <option value="chennai">Chennai</option>
+          <option value="kolkata">Kolkata</option>
+          <option value="bangalore">Bangalore</option>
+        </select>
+      </div>
+      <div class="form-row">
+        <label for="date">Date:</label>
+        <input type="date" id="date" required>
+      </div>
+      <div class="form-row">
+        <label for="seat">Seat:</label>
+        <select id="seat">
+          <optgroup label="Class">
+            <option value="sleeper">Sleeper</option>
+            <option value="first_ac">First AC</option>
+            <option value="second_ac">Second AC</option>
+          </optgroup>
+          <optgroup label="Sleeper Seats">
+            <option value="s1">S1</option>
+            <option value="s2">S2</option>
+            
+          </optgroup>
+          <optgroup label="First AC Seats">
+            <option value="f1">F1</option>
+            <option value="f2">F2</option>
+          </optgroup>
+          <optgroup label="Second AC Seats">
+            <option value="a1">A1</option>
+            <option value="a2">A2</option>
+          </optgroup>
+        </select>
+      </div>
+      
+      <button type="submit">Submit</button>
+    </form>
+    
+<!-- Invoice Container -->
+<div id="invoice" class="invoice-container">
+  <h3 class="invoice-heading">Invoice</h3>
+  <hr>
+  <br>
+  <div class="invoice-details">
+    <p><strong>Name:</strong> <span id="invoice-name"></span></p>
+    <p><strong>Email:</strong> <span id="invoice-email"></span></p>
+    <p><strong>Train:</strong> <span id="invoice-train"></span></p>
+    <p><strong>From:</strong> <span id="invoice-from"></span></p>
+    <p><strong>To:</strong> <span id="invoice-to"></span></p>
+    <p><strong>Seat:</strong> <span id="invoice-seat"></span></p>
+    <p><strong>Arrival Time:</strong> <span id="invoice-arrival"></span></p>
+    <p><strong>Departure Time:</strong> <span id="invoice-departure"></span></p>
+    <p><strong>Price:</strong> <span id="invoice-price"></span></p>
+  </div>
+</div>
+
+
+  </div>
+
+  <script src="main.js"></script>
+</body>
+</html>
+
+
